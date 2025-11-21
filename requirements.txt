@@ -1,5 +1,7 @@
 fastapi
-uvicorn
-httpx
-playwright
+uvicorn[standard]
+requests
+beautifulsoup4
+pydantic
 python-multipart
+playwright
