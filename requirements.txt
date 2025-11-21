@@ -13,3 +13,4 @@ anyio
 playwright
 numpy
 pandas 
+pdfplumber
