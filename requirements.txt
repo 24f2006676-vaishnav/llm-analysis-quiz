@@ -2,6 +2,14 @@ fastapi
 uvicorn[standard]
 requests
 beautifulsoup4
-pydantic
+lxml
+matplotlib
+pillow
+aiohttp
 python-multipart
+pydantic
+typing-extensions
+anyio
 playwright
+numpy
+pandas 
