@@ -14,13 +14,17 @@ WORKDIR /app
 # Copy project files
 COPY . .
 
-# Install Python deps
+# Install Python dependencies
 RUN pip install --no-cache-dir -r requirements.txt
 
-# Install Playwright browsers
+# Install Playwright itself
+RUN pip install playwright
+
+# Install Playwright browser dependencies + Chromium
 RUN playwright install --with-deps chromium
 
 # Expose port
 EXPOSE 8000
 
+# Run server
 CMD ["uvicorn", "server.main:app", "--host", "0.0.0.0", "--port", "8000"]
